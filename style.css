@@ -1,0 +1,71 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+
+#player {
+    width: 50px;
+    height: 50px;
+    background-image: url(./img/Butterfly.jpg);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+
+#damper {
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/Flower.png);
+    background-size: 40px 40px;
+    position: relative;
+    top: 110px;
+    left: 560px;
+}
+
+.start {
+    width: 600px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+
+.animate {
+    animation: damperMove 2s infinite linear;
+}
+
+@keyframes damperMove {
+    0% {
+        left: 560px;
+    }
+
+    100% {
+        left: -40px;
+    }
+}
+
+.active {
+    animation: damperMove 0.3s linear;  
+}
+
+@keyframes jumpActive {
+    0% {
+        top: 150px;
+    }
+
+    20% {
+        top: 100px;
+    }
+
+    50% {
+        top: 50px;
+    }
+
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}
